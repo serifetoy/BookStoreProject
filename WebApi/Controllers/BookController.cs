@@ -9,6 +9,8 @@ using WebApi.BookOperations.CreateBook;
 using WebApi.BookOperations.GetBookDetail;
 using WebApi.BookOperations.UpdateBook;
 using WebApi.BookOperations.DeleteBook;
+using AutoMapper;
+using FluentValidation;
 
 namespace WebApi.AddControllers
 {
@@ -18,10 +20,12 @@ namespace WebApi.AddControllers
     public class BookController : ControllerBase
     {
         private readonly BookStoreDbContext _context;
+        private readonly IMapper _mapper;
 
-        public BookController(BookStoreDbContext context)
+        public BookController(BookStoreDbContext context, IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
         // private static List<Book> BookList = new List<Book>()
         // {
@@ -52,7 +56,7 @@ namespace WebApi.AddControllers
         [HttpGet]
         public IActionResult GetBooks()
         {
-            GetBooksQuery query = new GetBooksQuery(_context);
+            GetBooksQuery query = new GetBooksQuery(_context, _mapper);
             var result = query.Handle();
             return Ok(result);
         }
@@ -64,8 +68,11 @@ namespace WebApi.AddControllers
 
             try
             {
-                GetBookDetailQuery query = new GetBookDetailQuery(_context);
+                GetBookDetailQuery query = new GetBookDetailQuery(_context, _mapper);
                 query.BookId = id;
+
+                GetBookDetailQueryValidator validator = new GetBookDetailQueryValidator();
+                validator.ValidateAndThrow(query);
                 result = query.Handle();
 
             }
@@ -84,11 +91,13 @@ namespace WebApi.AddControllers
         {
 
 
-            CreateBookCommands command = new CreateBookCommands(_context);
+            CreateBookCommands command = new CreateBookCommands(_context, _mapper);
 
             try
             {
                 command.Model = newBook;
+                CreateBookCommandValidator validator = new CreateBookCommandValidator();
+                validator.ValidateAndThrow(command);//hatayı dönmesi için kullandım
                 command.Handle();
 
             }
@@ -114,6 +123,11 @@ namespace WebApi.AddControllers
             {
                 command.BookId = id;
                 command.Model = updatedBook;
+
+                UpdateBookCommandValidator validator = new UpdateBookCommandValidator();
+                validator.ValidateAndThrow(command);
+
+
                 command.Handle();
 
             }
@@ -136,6 +150,8 @@ namespace WebApi.AddControllers
             try
             {
                 command.BookId = id;
+                DeleteBookCommandValidator validator = new DeleteBookCommandValidator();
+                validator.ValidateAndThrow(command);
                 command.Handle();
             }
             catch (Exception ex)
