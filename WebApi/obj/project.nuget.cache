@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "18gwDTkjC/Fi3ac89S1xBKLpXCU3oILR+0Jds8ooBDr8KR+k7of/OOejt7sTC5qRJytc7pAkxF6jtO/TKXbOig==",
+  "dgSpecHash": "lo5vUklhxYoerO0xyvMne2ABvrgrdQ2/ZgzJWZtn4277XFliV2tWOMeDj7UAzX2piHJCAdGLueiGPM+KlFKM9Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\serif\\source\\.NETProjects\\BookStore\\WebApi\\WebApi.csproj",
+  "projectFilePath": "C:\\Users\\serif\\OneDrive\\Belgeler\\GitHub\\BookStoreProject\\webapi\\WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\serif\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\serif\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
@@ -22,6 +22,7 @@
     "C:\\Users\\serif\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
     "C:\\Users\\serif\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "C:\\Users\\serif\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\serif\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\serif\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
     "C:\\Users\\serif\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
     "C:\\Users\\serif\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
