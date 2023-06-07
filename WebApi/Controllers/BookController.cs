@@ -1,7 +1,3 @@
-using System;
-using System.Linq;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using WebApi.DBOperations;
 using WebApi.Application.BookOperations.Queries.GetBooks;
@@ -19,10 +15,10 @@ namespace WebApi.Controllers
 
     public class BookController : ControllerBase
     {
-        private readonly BookStoreDbContext _context;
+        private readonly IBookStoreDbContext _context;
         private readonly IMapper _mapper;
 
-        public BookController(BookStoreDbContext context, IMapper mapper)
+        public BookController(IBookStoreDbContext context, IMapper mapper)
         {
             _context = context;
             _mapper = mapper;

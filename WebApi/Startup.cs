@@ -38,8 +38,9 @@ namespace WebApi
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebApi", Version = "v1" });
             });
 
-            services.AddDbContext<BookStoreDbContext>(options => options.UseInMemoryDatabase(databaseName: "BookStoreDB"));
+            services.AddDbContext<BookStoreDbContext>(options => options.UseInMemoryDatabase(databaseName: "BookStoreDB"));// controllerde kullanılanları burada inject ediyorum
             services.AddAutoMapper(Assembly.GetExecutingAssembly()); //automapper için bu satırı ekledim
+            services.AddScoped<IBookStoreDbContext>(provider => provider.GetService<BookStoreDbContext>());
             services.AddSingleton<ILoggerService, ConsoleLogger>(); // ilkine kalıtım alınan sınıf, 2. kullanılan sınıf yazılır
         }
 

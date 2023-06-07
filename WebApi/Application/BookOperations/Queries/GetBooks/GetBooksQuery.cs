@@ -13,9 +13,9 @@ namespace WebApi.Application.BookOperations.Queries.GetBooks
 {
     public class GetBooksQuery
     {
-        private readonly BookStoreDbContext _dbContext; //sadece contructor içinden set edilebilsin istediğim için bu şekilde yaptım.
+        private readonly IBookStoreDbContext _dbContext; //sadece contructor içinden set edilebilsin istediğim için bu şekilde yaptım.
         private readonly IMapper _mapper;//burdan sonra constructora parametre olarak eklemeyi unutma
-        public GetBooksQuery(BookStoreDbContext dbContext, IMapper mapper)
+        public GetBooksQuery(IBookStoreDbContext dbContext, IMapper mapper)
         {
             _dbContext = dbContext;
             _mapper = mapper;

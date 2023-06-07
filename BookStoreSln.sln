@@ -5,6 +5,10 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{097C55BB-5368-4A8B-BC57-9431C94641FA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{3FA93F9A-B2AE-40A1-8333-5F34717C9FFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.UnitTests", "Tests\WebApi.UnitTests\WebApi.UnitTests.csproj", "{22B3779E-ECA9-4232-ADFB-90465E9594A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,12 @@ Global
 		{097C55BB-5368-4A8B-BC57-9431C94641FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{097C55BB-5368-4A8B-BC57-9431C94641FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{097C55BB-5368-4A8B-BC57-9431C94641FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22B3779E-ECA9-4232-ADFB-90465E9594A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22B3779E-ECA9-4232-ADFB-90465E9594A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22B3779E-ECA9-4232-ADFB-90465E9594A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22B3779E-ECA9-4232-ADFB-90465E9594A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{22B3779E-ECA9-4232-ADFB-90465E9594A7} = {3FA93F9A-B2AE-40A1-8333-5F34717C9FFF}
 	EndGlobalSection
 EndGlobal

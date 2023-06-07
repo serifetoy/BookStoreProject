@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\serif\\OneDrive\\Belgeler\\GitHub\\BookStoreProject\\webapi\\WebApi.csproj": {}
+    "c:\\Users\\serif\\OneDrive\\Belgeler\\GitHub\\BookStoreProject\\WebApi\\WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\serif\\OneDrive\\Belgeler\\GitHub\\BookStoreProject\\webapi\\WebApi.csproj": {
+    "c:\\Users\\serif\\OneDrive\\Belgeler\\GitHub\\BookStoreProject\\WebApi\\WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\serif\\OneDrive\\Belgeler\\GitHub\\BookStoreProject\\webapi\\WebApi.csproj",
+        "projectUniqueName": "c:\\Users\\serif\\OneDrive\\Belgeler\\GitHub\\BookStoreProject\\WebApi\\WebApi.csproj",
         "projectName": "WebApi",
-        "projectPath": "C:\\Users\\serif\\OneDrive\\Belgeler\\GitHub\\BookStoreProject\\webapi\\WebApi.csproj",
+        "projectPath": "c:\\Users\\serif\\OneDrive\\Belgeler\\GitHub\\BookStoreProject\\WebApi\\WebApi.csproj",
         "packagesPath": "C:\\Users\\serif\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\serif\\OneDrive\\Belgeler\\GitHub\\BookStoreProject\\webapi\\obj\\",
+        "outputPath": "c:\\Users\\serif\\OneDrive\\Belgeler\\GitHub\\BookStoreProject\\WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

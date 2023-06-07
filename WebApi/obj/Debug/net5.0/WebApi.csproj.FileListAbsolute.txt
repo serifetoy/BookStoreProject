@@ -55,6 +55,7 @@ C:\Users\serif\OneDrive\Belgeler\GitHub\BookStoreProject\WebApi\bin\Debug\net5.0
 C:\Users\serif\OneDrive\Belgeler\GitHub\BookStoreProject\WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\Users\serif\OneDrive\Belgeler\GitHub\BookStoreProject\WebApi\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\serif\OneDrive\Belgeler\GitHub\BookStoreProject\WebApi\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\serif\OneDrive\Belgeler\GitHub\BookStoreProject\WebApi\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\serif\OneDrive\Belgeler\GitHub\BookStoreProject\WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\serif\OneDrive\Belgeler\GitHub\BookStoreProject\WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\serif\OneDrive\Belgeler\GitHub\BookStoreProject\WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -80,4 +81,3 @@ C:\Users\serif\OneDrive\Belgeler\GitHub\BookStoreProject\WebApi\obj\Debug\net5.0
 C:\Users\serif\OneDrive\Belgeler\GitHub\BookStoreProject\WebApi\obj\Debug\net5.0\WebApi.pdb
 C:\Users\serif\OneDrive\Belgeler\GitHub\BookStoreProject\WebApi\obj\Debug\net5.0\WebApi.genruntimeconfig.cache
 C:\Users\serif\OneDrive\Belgeler\GitHub\BookStoreProject\WebApi\obj\Debug\net5.0\ref\WebApi.dll
-C:\Users\serif\OneDrive\Belgeler\GitHub\BookStoreProject\webapi\bin\Debug\net5.0\Newtonsoft.Json.dll
